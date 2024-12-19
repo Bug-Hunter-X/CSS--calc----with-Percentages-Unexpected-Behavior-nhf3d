@@ -1,0 +1,20 @@
+/* Correct Usage of calc() with Percentages */
+#container {
+  width: 50%;
+}
+
+#element {
+  width: calc(100% - 20px);
+  background-color: lightblue;
+}
+/*The -20px is correctly subtracted after the 100% calculation of the parent*/
+
+/*Incorrect Usage of calc() with Percentages (Illustrative)*/
+/*#container {
+  width: 50%;
+}
+
+#element {
+  width: calc(50% - 20px); /*Incorrect: 20px is subtracted from 50% of the viewport, not the container width*/
+  background-color: lightblue;
+}*/
